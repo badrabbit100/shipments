@@ -22,8 +22,7 @@ def create_super_user():
 
 def main():
     """ Quick Init Database
-    $ python3 manage.py shell
-    $ from init_db import main; main(); exit()
+    $ echo "from init_db import main; main(); exit()" | python3 manage.py shell
     """
     create_shipments_in_database(amount_new_objects=10)
     create_super_user()
