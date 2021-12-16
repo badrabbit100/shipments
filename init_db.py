@@ -1,6 +1,5 @@
 from api.models import Shipment
-from django.contrib.auth.models import User
-import random, os
+import random
 
 
 def create_shipments_in_database(amount_new_objects):
@@ -14,15 +13,8 @@ def create_shipments_in_database(amount_new_objects):
                                 )
 
 
-def create_super_user():
-    """ Create SuperUser in Database """
-
-    User.objects.create_superuser(username='admin', password='superadmin1234')
-
-
 def main():
     """ Quick Init Database
     $ echo "from init_db import main; main(); exit()" | python3 manage.py shell
     """
     create_shipments_in_database(amount_new_objects=10)
-    create_super_user()
