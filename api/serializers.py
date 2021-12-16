@@ -3,8 +3,8 @@ from rest_framework import serializers
 
 
 class ShipmentSerializer(serializers.HyperlinkedModelSerializer):
-    """ Serialization class for Shipment objects """
+    """ Serializer for Shipment objects """
 
     class Meta:
         model = Shipment
-        fields = ['name', 'description', 'amount', 'price']
+        fields = ('id', 'name', 'description', 'amount', 'price', )
