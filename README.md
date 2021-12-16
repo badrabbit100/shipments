@@ -9,7 +9,7 @@
 
 
 ### Start Compose
-```sudo docker compose-up```
+```sudo docker-compose up```
 
 ### Api URL List
 http://0.0.0.0:8000/api/v1/
